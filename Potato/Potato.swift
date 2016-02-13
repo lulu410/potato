@@ -9,5 +9,10 @@
 import UIKit
 
 class Potato: NSObject {
+    var name: String = "Elbert"
+    
+    init(name: String) {
+        self.name = name
+    }
 
 }
