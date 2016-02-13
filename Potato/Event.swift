@@ -26,8 +26,8 @@ class Event: NSObject {
         case Exercise = "Exercise"
         case Chill = "Chill"
         
-        init() {
-            self = .Chill
+        init(act: Action) {
+            self = act
         }
     }
     
