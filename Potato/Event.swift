@@ -20,8 +20,7 @@ class Event: NSObject {
         case School = "School"
         case Work = "Work"
         case Socialize = "Socialize"
-        case Exercise = "Exersize"
+        case Exercise = "Exercise"
         case Chill = "Chill"
     }
-    
 }
