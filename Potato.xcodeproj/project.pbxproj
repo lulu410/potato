@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		DD9B675C1C6FA72700AD2D23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B675B1C6FA72700AD2D23 /* AppDelegate.swift */; };
-		DD9B675E1C6FA72700AD2D23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B675D1C6FA72700AD2D23 /* ViewController.swift */; };
 		DD9B67611C6FA72700AD2D23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9B675F1C6FA72700AD2D23 /* Main.storyboard */; };
 		DD9B67641C6FA72700AD2D23 /* Potato.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD9B67621C6FA72700AD2D23 /* Potato.xcdatamodeld */; };
 		DD9B67661C6FA72700AD2D23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD9B67651C6FA72700AD2D23 /* Assets.xcassets */; };
@@ -17,6 +16,7 @@
 		DD9B678D1C6FC32C00AD2D23 /* Potato.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B678C1C6FC32C00AD2D23 /* Potato.swift */; };
 		DD9B67911C6FC3AE00AD2D23 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B67901C6FC3AE00AD2D23 /* Event.swift */; };
 		DD9B67941C6FDEDD00AD2D23 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9B67921C6FDEDD00AD2D23 /* Launch Screen.storyboard */; };
+		DD9B67961C6FDFD400AD2D23 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B67951C6FDFD400AD2D23 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,6 @@
 /* Begin PBXFileReference section */
 		DD9B67581C6FA72700AD2D23 /* Potato.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Potato.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD9B675B1C6FA72700AD2D23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DD9B675D1C6FA72700AD2D23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DD9B67601C6FA72700AD2D23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD9B67631C6FA72700AD2D23 /* Potato.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Potato.xcdatamodel; sourceTree = "<group>"; };
 		DD9B67651C6FA72700AD2D23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +52,7 @@
 		DD9B678C1C6FC32C00AD2D23 /* Potato.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Potato.swift; sourceTree = "<group>"; };
 		DD9B67901C6FC3AE00AD2D23 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		DD9B67931C6FDEDD00AD2D23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Potato/Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
+		DD9B67951C6FDFD400AD2D23 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				DD9B675B1C6FA72700AD2D23 /* AppDelegate.swift */,
-				DD9B675D1C6FA72700AD2D23 /* ViewController.swift */,
 				DD9B675F1C6FA72700AD2D23 /* Main.storyboard */,
+				DD9B67951C6FDFD400AD2D23 /* HomeViewController.swift */,
 				DD9B67921C6FDEDD00AD2D23 /* Launch Screen.storyboard */,
 				DD9B67651C6FA72700AD2D23 /* Assets.xcassets */,
 				DD9B678C1C6FC32C00AD2D23 /* Potato.swift */,
@@ -269,10 +269,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD9B67641C6FA72700AD2D23 /* Potato.xcdatamodeld in Sources */,
-				DD9B675E1C6FA72700AD2D23 /* ViewController.swift in Sources */,
 				DD9B678D1C6FC32C00AD2D23 /* Potato.swift in Sources */,
 				DD9B67911C6FC3AE00AD2D23 /* Event.swift in Sources */,
 				DD9B675C1C6FA72700AD2D23 /* AppDelegate.swift in Sources */,
+				DD9B67961C6FDFD400AD2D23 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
