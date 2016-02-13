@@ -12,6 +12,9 @@ import UIKit
 
 class Event: NSObject {
     var time: Int = 0
+    init (time: Int) {
+        self.time = time
+    }
     enum Action: String {
         case Eat = "Eat"
         case Rise = "Rise" // waking up
@@ -22,5 +25,11 @@ class Event: NSObject {
         case Socialize = "Socialize"
         case Exercise = "Exercise"
         case Chill = "Chill"
+        
+        init() {
+            self = .Chill
+        }
     }
+    
+    
 }

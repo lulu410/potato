@@ -10,10 +10,18 @@ import UIKit
 
 class Potato: NSObject {
     enum Name: String {
-        case Elbert =  "Elbert"
-        case Donovan="Donovan"
+        case Elbert = "Elbert"
+        case Donovan = "Donovan"
     }
+    var schedule: [Event] = []
     
-
+    
+    init(Schedule: [Event]) {
+        
+        for index in 1...24 {
+            let defaultEvent = Event(time: index)
+            schedule.append(defaultEvent)
+        }
+    }
 }
 
