@@ -40,5 +40,26 @@ class Potato: NSObject {
         self.name = name
         self.mode = mode
     }
+    
+    //Adds an Event to the schedule
+    func addEvent(event:Event) {
+        schedule[event.time] = event
+    }
+    
+    //Deletes an Event
+    //Sets the Event action to .Chill
+    func deleteEvent(event:Event) {
+        schedule[event.time].act = .Chill
+    }
+    
+    //Changes the mode of the Potato
+    func changeMode(mode:Mode) {
+        self.mode = mode
+    }
+    
+    //Changes the name of the Potato
+    func changeName(name:Name) {
+        self.name = name
+    }
 }
 
