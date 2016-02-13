@@ -22,6 +22,8 @@
 		DD9B679C1C6FE27200AD2D23 /* ScheduleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B679B1C6FE27200AD2D23 /* ScheduleTableViewController.swift */; };
 		DD9B679E1C6FE29E00AD2D23 /* ModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B679D1C6FE29E00AD2D23 /* ModeViewController.swift */; };
 		DD9B67A21C6FE41600AD2D23 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B67A11C6FE41600AD2D23 /* SettingsTableViewCell.swift */; };
+		DD9B67A41C6FEE2200AD2D23 /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B67A31C6FEE2200AD2D23 /* ScheduleTableViewCell.swift */; };
+		DD9B67A61C6FF6DA00AD2D23 /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = DD9B67A51C6FF6DA00AD2D23 /* Resources */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		DD9B679B1C6FE27200AD2D23 /* ScheduleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewController.swift; sourceTree = "<group>"; };
 		DD9B679D1C6FE29E00AD2D23 /* ModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModeViewController.swift; sourceTree = "<group>"; };
 		DD9B67A11C6FE41600AD2D23 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		DD9B67A31C6FEE2200AD2D23 /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
+		DD9B67A51C6FF6DA00AD2D23 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,7 @@
 		DD9B675A1C6FA72700AD2D23 /* Potato */ = {
 			isa = PBXGroup;
 			children = (
+				DD9B67A51C6FF6DA00AD2D23 /* Resources */,
 				DD9B67A01C6FE3F300AD2D23 /* Schedule */,
 				DD9B679F1C6FE3E900AD2D23 /* Settings */,
 				DD9B675B1C6FA72700AD2D23 /* AppDelegate.swift */,
@@ -161,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				DD9B679B1C6FE27200AD2D23 /* ScheduleTableViewController.swift */,
+				DD9B67A31C6FEE2200AD2D23 /* ScheduleTableViewCell.swift */,
 			);
 			name = Schedule;
 			sourceTree = "<group>";
@@ -272,6 +278,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD9B67A61C6FF6DA00AD2D23 /* Resources in Resources */,
 				DD9B67941C6FDEDD00AD2D23 /* Launch Screen.storyboard in Resources */,
 				DD9B67661C6FA72700AD2D23 /* Assets.xcassets in Resources */,
 				DD9B67611C6FA72700AD2D23 /* Main.storyboard in Resources */,
@@ -301,6 +308,7 @@
 			files = (
 				DD9B679C1C6FE27200AD2D23 /* ScheduleTableViewController.swift in Sources */,
 				DD9B67641C6FA72700AD2D23 /* Potato.xcdatamodeld in Sources */,
+				DD9B67A41C6FEE2200AD2D23 /* ScheduleTableViewCell.swift in Sources */,
 				DD9B679A1C6FE22200AD2D23 /* HelpTableViewController.swift in Sources */,
 				DD9B678D1C6FC32C00AD2D23 /* Potato.swift in Sources */,
 				DD9B67981C6FE14D00AD2D23 /* SettingsTableViewController.swift in Sources */,

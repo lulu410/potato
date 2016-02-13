@@ -8,8 +8,14 @@
 
 import UIKit
 
-class ScheduleTableViewController: UITableViewController {
+enum Day: String{
+    case Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
+}
 
+class ScheduleTableViewController: UITableViewController {
+    
+    var dayOfWeek: [Day] = [.Monday, .Tuesday, .Wednesday, .Thursday, .Friday, .Saturday, .Sunday]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,24 +35,32 @@ class ScheduleTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return dayOfWeek.count
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 2
+    }
+    
+    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return dayOfWeek[section].rawValue
     }
 
-    /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
-
-        // Configure the cell...
+        let cell = tableView.dequeueReusableCellWithIdentifier("scheduleCell", forIndexPath: indexPath) as! ScheduleTableViewCell
+        
+        cell.labelEvent.text = "Eat Breakfast"
+        cell.labelTime.text = "7:30am"
 
         return cell
     }
-    */
-
+    
+    override func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        let header = view as! UITableViewHeaderFooterView
+        
+//        header.textLabel?.font = UIFont(name: <#T##String#>, size: <#T##CGFloat#>)
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {

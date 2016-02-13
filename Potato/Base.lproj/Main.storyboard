@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="w21-Fq-Ha9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="w21-Fq-Ha9">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -144,18 +144,62 @@
         <scene sceneID="yVX-rI-h4J">
             <objects>
                 <tableViewController id="oqr-wG-3vj" customClass="ScheduleTableViewController" customModule="Potato" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="APx-mz-SRH">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="89" sectionHeaderHeight="28" sectionFooterHeight="28" id="APx-mz-SRH">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Xga-ZW-1vR">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="scheduleCell" rowHeight="89" id="Xga-ZW-1vR" customClass="ScheduleTableViewCell" customModule="Potato" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="89"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xga-ZW-1vR" id="D5f-u8-HHK">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="88.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2po-zG-3a7">
+                                            <rect key="frame" x="0.0" y="0.0" width="15" height="88.5"/>
+                                            <color key="backgroundColor" red="0.086274512112140656" green="0.77254903316497803" blue="0.61103510856628418" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="15" id="0bE-mR-Y2l"/>
+                                            </constraints>
+                                        </view>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cm0-ma-mD4">
+                                            <rect key="frame" x="23" y="8" width="72.5" height="72.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="cm0-ma-mD4" secondAttribute="height" multiplier="1:1" id="HgP-S4-Sru"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BmQ-zl-dc0">
+                                            <rect key="frame" x="103" y="8" width="74.5" height="36"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yp1-Ml-Toe">
+                                            <rect key="frame" x="103" y="47" width="38" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="BmQ-zl-dc0" firstAttribute="leading" secondItem="cm0-ma-mD4" secondAttribute="trailing" constant="8" id="0ak-ll-IvB"/>
+                                        <constraint firstItem="cm0-ma-mD4" firstAttribute="top" secondItem="D5f-u8-HHK" secondAttribute="topMargin" id="6or-85-c1b"/>
+                                        <constraint firstItem="2po-zG-3a7" firstAttribute="top" secondItem="D5f-u8-HHK" secondAttribute="topMargin" constant="-8" id="NUc-Nw-DX9"/>
+                                        <constraint firstItem="Yp1-Ml-Toe" firstAttribute="leading" secondItem="BmQ-zl-dc0" secondAttribute="leading" id="VbP-XQ-pAK"/>
+                                        <constraint firstItem="cm0-ma-mD4" firstAttribute="leading" secondItem="2po-zG-3a7" secondAttribute="trailing" constant="8" id="Wp9-CC-PzU"/>
+                                        <constraint firstItem="BmQ-zl-dc0" firstAttribute="top" secondItem="cm0-ma-mD4" secondAttribute="top" id="XgZ-aR-DPr"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="cm0-ma-mD4" secondAttribute="bottom" id="ZWP-eh-LP6"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="2po-zG-3a7" secondAttribute="bottom" constant="-8" id="s4w-8U-9wk"/>
+                                        <constraint firstItem="Yp1-Ml-Toe" firstAttribute="top" secondItem="BmQ-zl-dc0" secondAttribute="bottom" constant="3" id="vCe-b6-2A9"/>
+                                        <constraint firstItem="2po-zG-3a7" firstAttribute="leading" secondItem="D5f-u8-HHK" secondAttribute="leadingMargin" constant="-8" id="xgt-ry-5zA"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imageEvent" destination="cm0-ma-mD4" id="CzA-8S-zxg"/>
+                                    <outlet property="labelEvent" destination="BmQ-zl-dc0" id="s4W-Vp-UtU"/>
+                                    <outlet property="labelTime" destination="Yp1-Ml-Toe" id="Uv2-4g-oUu"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

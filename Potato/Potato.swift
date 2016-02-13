@@ -12,7 +12,7 @@
 import UIKit
 
 class Potato: NSObject {
-    var schedule: [Event] = []
+    var schedule = [Week:Event]()
     var name: Name
     var mode: Mode
     var growth: Growth
@@ -45,25 +45,39 @@ class Potato: NSObject {
         }
     }
     
-    init(mode: Mode, name:Name, growth: Growth) {
-        for index in 1...24 {
-            let defaultEvent = Event(time: index, act: .Chill)
-            self.schedule.append(defaultEvent)
+    enum Week: String {
+        case Monday = "Monday"
+        case Tuesday = "Tuesday"
+        case Wednesday = "Wednesday"
+        case Thursday = "Thursday"
+        case Friday = "Friday"
+        case Saturday = "Saturday"
+        case Sunday = "Sunday"
+        init(week:Week){
+            self = week
         }
+    }
+    
+    init(mode: Mode, name:Name, growth: Growth) {
+     //   for index in 1...24 {
+       //     let defaultEvent = Event(time: index, act: .Chill)
+         //   self.schedule.append(defaultEvent)
+       // }
         self.name = name
         self.mode = mode
         self.growth = growth
     }
     
     //Adds an Event to the schedule
-    func addEvent(event:Event) {
-        schedule[event.time] = event
+    func addEvent(week:Week,event:Event) {
+        schedule[week] = event
     }
     
     //Deletes an Event
     //Sets the Event action to .Chill
-    func deleteEvent(event:Event) {
-        schedule[event.time].act = .Chill
+    func deleteEvent(week:Week,event:Event) {
+            schedule[week]!.act = .Chill
+        
     }
     
     //Changes the mode of the Potato
