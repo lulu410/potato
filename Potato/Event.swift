@@ -27,6 +27,8 @@ class Event: NSObject {
         case Socialize = "Socialize"
         case Exercise = "Exercise"
         case Chill = "Chill"
+        case Date = "Date"
+        case NetflixChill = "NetflixChill"
         
         init(act: Action) {
             self = act
