@@ -21,6 +21,7 @@
 		DD9B679A1C6FE22200AD2D23 /* HelpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B67991C6FE22200AD2D23 /* HelpTableViewController.swift */; };
 		DD9B679C1C6FE27200AD2D23 /* ScheduleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B679B1C6FE27200AD2D23 /* ScheduleTableViewController.swift */; };
 		DD9B679E1C6FE29E00AD2D23 /* ModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B679D1C6FE29E00AD2D23 /* ModeViewController.swift */; };
+		DD9B67A21C6FE41600AD2D23 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B67A11C6FE41600AD2D23 /* SettingsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		DD9B67991C6FE22200AD2D23 /* HelpTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpTableViewController.swift; sourceTree = "<group>"; };
 		DD9B679B1C6FE27200AD2D23 /* ScheduleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewController.swift; sourceTree = "<group>"; };
 		DD9B679D1C6FE29E00AD2D23 /* ModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModeViewController.swift; sourceTree = "<group>"; };
+		DD9B67A11C6FE41600AD2D23 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,12 +113,12 @@
 		DD9B675A1C6FA72700AD2D23 /* Potato */ = {
 			isa = PBXGroup;
 			children = (
+				DD9B67A01C6FE3F300AD2D23 /* Schedule */,
+				DD9B679F1C6FE3E900AD2D23 /* Settings */,
 				DD9B675B1C6FA72700AD2D23 /* AppDelegate.swift */,
 				DD9B675F1C6FA72700AD2D23 /* Main.storyboard */,
 				DD9B679D1C6FE29E00AD2D23 /* ModeViewController.swift */,
-				DD9B679B1C6FE27200AD2D23 /* ScheduleTableViewController.swift */,
 				DD9B67991C6FE22200AD2D23 /* HelpTableViewController.swift */,
-				DD9B67971C6FE14D00AD2D23 /* SettingsTableViewController.swift */,
 				DD9B67951C6FDFD400AD2D23 /* HomeViewController.swift */,
 				DD9B67921C6FDEDD00AD2D23 /* Launch Screen.storyboard */,
 				DD9B67651C6FA72700AD2D23 /* Assets.xcassets */,
@@ -144,6 +146,23 @@
 				DD9B67801C6FA72700AD2D23 /* Info.plist */,
 			);
 			path = PotatoUITests;
+			sourceTree = "<group>";
+		};
+		DD9B679F1C6FE3E900AD2D23 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				DD9B67971C6FE14D00AD2D23 /* SettingsTableViewController.swift */,
+				DD9B67A11C6FE41600AD2D23 /* SettingsTableViewCell.swift */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		DD9B67A01C6FE3F300AD2D23 /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				DD9B679B1C6FE27200AD2D23 /* ScheduleTableViewController.swift */,
+			);
+			name = Schedule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,6 +307,7 @@
 				DD9B67911C6FC3AE00AD2D23 /* Event.swift in Sources */,
 				DD9B675C1C6FA72700AD2D23 /* AppDelegate.swift in Sources */,
 				DD9B679E1C6FE29E00AD2D23 /* ModeViewController.swift in Sources */,
+				DD9B67A21C6FE41600AD2D23 /* SettingsTableViewCell.swift in Sources */,
 				DD9B67961C6FDFD400AD2D23 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
