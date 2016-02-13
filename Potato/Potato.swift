@@ -13,15 +13,14 @@ class Potato: NSObject {
         case Elbert = "Elbert"
         case Donovan = "Donovan"
     }
+    
     var schedule: [Event] = []
-    
-    
-    init(Schedule: [Event]) {
-        
+    override init() {
         for index in 1...24 {
             let defaultEvent = Event(time: index)
-            schedule.append(defaultEvent)
+            self.schedule.append(defaultEvent)
         }
     }
+    
 }
 
