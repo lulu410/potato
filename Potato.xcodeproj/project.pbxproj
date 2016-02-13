@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD9B675C1C6FA72700AD2D23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B675B1C6FA72700AD2D23 /* AppDelegate.swift */; };
+		DD9B675E1C6FA72700AD2D23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B675D1C6FA72700AD2D23 /* ViewController.swift */; };
+		DD9B67611C6FA72700AD2D23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9B675F1C6FA72700AD2D23 /* Main.storyboard */; };
+		DD9B67641C6FA72700AD2D23 /* Potato.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD9B67621C6FA72700AD2D23 /* Potato.xcdatamodeld */; };
+		DD9B67661C6FA72700AD2D23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD9B67651C6FA72700AD2D23 /* Assets.xcassets */; };
+		DD9B67691C6FA72700AD2D23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9B67671C6FA72700AD2D23 /* LaunchScreen.storyboard */; };
+		DD9B67741C6FA72700AD2D23 /* PotatoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B67731C6FA72700AD2D23 /* PotatoTests.swift */; };
+		DD9B677F1C6FA72700AD2D23 /* PotatoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B677E1C6FA72700AD2D23 /* PotatoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD9B67701C6FA72700AD2D23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD9B67501C6FA72700AD2D23 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD9B67571C6FA72700AD2D23;
+			remoteInfo = Potato;
+		};
+		DD9B677B1C6FA72700AD2D23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD9B67501C6FA72700AD2D23 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD9B67571C6FA72700AD2D23;
+			remoteInfo = Potato;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DD9B67581C6FA72700AD2D23 /* Potato.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Potato.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD9B675B1C6FA72700AD2D23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DD9B675D1C6FA72700AD2D23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DD9B67601C6FA72700AD2D23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DD9B67631C6FA72700AD2D23 /* Potato.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Potato.xcdatamodel; sourceTree = "<group>"; };
+		DD9B67651C6FA72700AD2D23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD9B67681C6FA72700AD2D23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DD9B676A1C6FA72700AD2D23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD9B676F1C6FA72700AD2D23 /* PotatoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PotatoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD9B67731C6FA72700AD2D23 /* PotatoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotatoTests.swift; sourceTree = "<group>"; };
+		DD9B67751C6FA72700AD2D23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD9B677A1C6FA72700AD2D23 /* PotatoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PotatoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD9B677E1C6FA72700AD2D23 /* PotatoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotatoUITests.swift; sourceTree = "<group>"; };
+		DD9B67801C6FA72700AD2D23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD9B67551C6FA72700AD2D23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD9B676C1C6FA72700AD2D23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD9B67771C6FA72700AD2D23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD9B674F1C6FA72700AD2D23 = {
+			isa = PBXGroup;
+			children = (
+				DD9B675A1C6FA72700AD2D23 /* Potato */,
+				DD9B67721C6FA72700AD2D23 /* PotatoTests */,
+				DD9B677D1C6FA72700AD2D23 /* PotatoUITests */,
+				DD9B67591C6FA72700AD2D23 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD9B67591C6FA72700AD2D23 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD9B67581C6FA72700AD2D23 /* Potato.app */,
+				DD9B676F1C6FA72700AD2D23 /* PotatoTests.xctest */,
+				DD9B677A1C6FA72700AD2D23 /* PotatoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD9B675A1C6FA72700AD2D23 /* Potato */ = {
+			isa = PBXGroup;
+			children = (
+				DD9B675B1C6FA72700AD2D23 /* AppDelegate.swift */,
+				DD9B675D1C6FA72700AD2D23 /* ViewController.swift */,
+				DD9B675F1C6FA72700AD2D23 /* Main.storyboard */,
+				DD9B67651C6FA72700AD2D23 /* Assets.xcassets */,
+				DD9B67671C6FA72700AD2D23 /* LaunchScreen.storyboard */,
+				DD9B676A1C6FA72700AD2D23 /* Info.plist */,
+				DD9B67621C6FA72700AD2D23 /* Potato.xcdatamodeld */,
+			);
+			path = Potato;
+			sourceTree = "<group>";
+		};
+		DD9B67721C6FA72700AD2D23 /* PotatoTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD9B67731C6FA72700AD2D23 /* PotatoTests.swift */,
+				DD9B67751C6FA72700AD2D23 /* Info.plist */,
+			);
+			path = PotatoTests;
+			sourceTree = "<group>";
+		};
+		DD9B677D1C6FA72700AD2D23 /* PotatoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DD9B677E1C6FA72700AD2D23 /* PotatoUITests.swift */,
+				DD9B67801C6FA72700AD2D23 /* Info.plist */,
+			);
+			path = PotatoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD9B67571C6FA72700AD2D23 /* Potato */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD9B67831C6FA72700AD2D23 /* Build configuration list for PBXNativeTarget "Potato" */;
+			buildPhases = (
+				DD9B67541C6FA72700AD2D23 /* Sources */,
+				DD9B67551C6FA72700AD2D23 /* Frameworks */,
+				DD9B67561C6FA72700AD2D23 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Potato;
+			productName = Potato;
+			productReference = DD9B67581C6FA72700AD2D23 /* Potato.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD9B676E1C6FA72700AD2D23 /* PotatoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD9B67861C6FA72700AD2D23 /* Build configuration list for PBXNativeTarget "PotatoTests" */;
+			buildPhases = (
+				DD9B676B1C6FA72700AD2D23 /* Sources */,
+				DD9B676C1C6FA72700AD2D23 /* Frameworks */,
+				DD9B676D1C6FA72700AD2D23 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD9B67711C6FA72700AD2D23 /* PBXTargetDependency */,
+			);
+			name = PotatoTests;
+			productName = PotatoTests;
+			productReference = DD9B676F1C6FA72700AD2D23 /* PotatoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DD9B67791C6FA72700AD2D23 /* PotatoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD9B67891C6FA72700AD2D23 /* Build configuration list for PBXNativeTarget "PotatoUITests" */;
+			buildPhases = (
+				DD9B67761C6FA72700AD2D23 /* Sources */,
+				DD9B67771C6FA72700AD2D23 /* Frameworks */,
+				DD9B67781C6FA72700AD2D23 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD9B677C1C6FA72700AD2D23 /* PBXTargetDependency */,
+			);
+			name = PotatoUITests;
+			productName = PotatoUITests;
+			productReference = DD9B677A1C6FA72700AD2D23 /* PotatoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD9B67501C6FA72700AD2D23 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Monica Ong";
+				TargetAttributes = {
+					DD9B67571C6FA72700AD2D23 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = D2FXV4LXGX;
+					};
+					DD9B676E1C6FA72700AD2D23 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = D2FXV4LXGX;
+						TestTargetID = DD9B67571C6FA72700AD2D23;
+					};
+					DD9B67791C6FA72700AD2D23 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = D2FXV4LXGX;
+						TestTargetID = DD9B67571C6FA72700AD2D23;
+					};
+				};
+			};
+			buildConfigurationList = DD9B67531C6FA72700AD2D23 /* Build configuration list for PBXProject "Potato" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD9B674F1C6FA72700AD2D23;
+			productRefGroup = DD9B67591C6FA72700AD2D23 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD9B67571C6FA72700AD2D23 /* Potato */,
+				DD9B676E1C6FA72700AD2D23 /* PotatoTests */,
+				DD9B67791C6FA72700AD2D23 /* PotatoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD9B67561C6FA72700AD2D23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD9B67691C6FA72700AD2D23 /* LaunchScreen.storyboard in Resources */,
+				DD9B67661C6FA72700AD2D23 /* Assets.xcassets in Resources */,
+				DD9B67611C6FA72700AD2D23 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD9B676D1C6FA72700AD2D23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD9B67781C6FA72700AD2D23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD9B67541C6FA72700AD2D23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD9B67641C6FA72700AD2D23 /* Potato.xcdatamodeld in Sources */,
+				DD9B675E1C6FA72700AD2D23 /* ViewController.swift in Sources */,
+				DD9B675C1C6FA72700AD2D23 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD9B676B1C6FA72700AD2D23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD9B67741C6FA72700AD2D23 /* PotatoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD9B67761C6FA72700AD2D23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD9B677F1C6FA72700AD2D23 /* PotatoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD9B67711C6FA72700AD2D23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD9B67571C6FA72700AD2D23 /* Potato */;
+			targetProxy = DD9B67701C6FA72700AD2D23 /* PBXContainerItemProxy */;
+		};
+		DD9B677C1C6FA72700AD2D23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD9B67571C6FA72700AD2D23 /* Potato */;
+			targetProxy = DD9B677B1C6FA72700AD2D23 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DD9B675F1C6FA72700AD2D23 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD9B67601C6FA72700AD2D23 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DD9B67671C6FA72700AD2D23 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD9B67681C6FA72700AD2D23 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD9B67811C6FA72700AD2D23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DD9B67821C6FA72700AD2D23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD9B67841C6FA72700AD2D23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Potato/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Monica-Ong.Potato";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DD9B67851C6FA72700AD2D23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Potato/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Monica-Ong.Potato";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DD9B67871C6FA72700AD2D23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PotatoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Monica-Ong.PotatoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Potato.app/Potato";
+			};
+			name = Debug;
+		};
+		DD9B67881C6FA72700AD2D23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PotatoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Monica-Ong.PotatoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Potato.app/Potato";
+			};
+			name = Release;
+		};
+		DD9B678A1C6FA72700AD2D23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PotatoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Monica-Ong.PotatoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Potato;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		DD9B678B1C6FA72700AD2D23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PotatoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Monica-Ong.PotatoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Potato;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD9B67531C6FA72700AD2D23 /* Build configuration list for PBXProject "Potato" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD9B67811C6FA72700AD2D23 /* Debug */,
+				DD9B67821C6FA72700AD2D23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD9B67831C6FA72700AD2D23 /* Build configuration list for PBXNativeTarget "Potato" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD9B67841C6FA72700AD2D23 /* Debug */,
+				DD9B67851C6FA72700AD2D23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DD9B67861C6FA72700AD2D23 /* Build configuration list for PBXNativeTarget "PotatoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD9B67871C6FA72700AD2D23 /* Debug */,
+				DD9B67881C6FA72700AD2D23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DD9B67891C6FA72700AD2D23 /* Build configuration list for PBXNativeTarget "PotatoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD9B678A1C6FA72700AD2D23 /* Debug */,
+				DD9B678B1C6FA72700AD2D23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DD9B67621C6FA72700AD2D23 /* Potato.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DD9B67631C6FA72700AD2D23 /* Potato.xcdatamodel */,
+			);
+			currentVersion = DD9B67631C6FA72700AD2D23 /* Potato.xcdatamodel */;
+			path = Potato.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DD9B67501C6FA72700AD2D23 /* Project object */;
+}
