@@ -15,6 +15,7 @@ class Potato: NSObject {
     var schedule: [Event] = []
     var name: Name
     var mode: Mode
+    var growth: Growth
     
     enum Name: String {
         case Elbert = "Elbert"
@@ -32,13 +33,26 @@ class Potato: NSObject {
         }
     }
     
-    init(mode: Mode, name:Name) {
+    enum Growth: String {
+        case Baby = "Baby"
+        case Teen = "Teen"
+        case Adult = "Adult"
+        case Sprout = "Sprout"
+        case Plant = "Plant"
+        case Tree = "Tree"
+        init(growth:Growth) {
+            self = growth
+        }
+    }
+    
+    init(mode: Mode, name:Name, growth: Growth) {
         for index in 1...24 {
             let defaultEvent = Event(time: index, act: .Chill)
             self.schedule.append(defaultEvent)
         }
         self.name = name
         self.mode = mode
+        self.growth = growth
     }
     
     //Adds an Event to the schedule
