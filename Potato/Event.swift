@@ -11,11 +11,12 @@
 import UIKit
 
 class Event: NSObject {
-    var time: NSDate = NSDate()
+    var start: NSDate = NSDate()
+    var end: NSDate = NSDate()
     var act: Action
-    init (time: NSDate, act: Action) {
-        self.time = time
-        self.act = act
+    init (start: NSDate, end: NSDate, act: Action) {
+        self.start = start
+        self.end = end
     }
     enum Action: String {
         case Eat = "Eat"
