@@ -17,6 +17,10 @@
 		DD9B67911C6FC3AE00AD2D23 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B67901C6FC3AE00AD2D23 /* Event.swift */; };
 		DD9B67941C6FDEDD00AD2D23 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9B67921C6FDEDD00AD2D23 /* Launch Screen.storyboard */; };
 		DD9B67961C6FDFD400AD2D23 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B67951C6FDFD400AD2D23 /* HomeViewController.swift */; };
+		DD9B67981C6FE14D00AD2D23 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B67971C6FE14D00AD2D23 /* SettingsTableViewController.swift */; };
+		DD9B679A1C6FE22200AD2D23 /* HelpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B67991C6FE22200AD2D23 /* HelpTableViewController.swift */; };
+		DD9B679C1C6FE27200AD2D23 /* ScheduleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B679B1C6FE27200AD2D23 /* ScheduleTableViewController.swift */; };
+		DD9B679E1C6FE29E00AD2D23 /* ModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B679D1C6FE29E00AD2D23 /* ModeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,10 @@
 		DD9B67901C6FC3AE00AD2D23 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		DD9B67931C6FDEDD00AD2D23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Potato/Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
 		DD9B67951C6FDFD400AD2D23 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DD9B67971C6FE14D00AD2D23 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		DD9B67991C6FE22200AD2D23 /* HelpTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpTableViewController.swift; sourceTree = "<group>"; };
+		DD9B679B1C6FE27200AD2D23 /* ScheduleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewController.swift; sourceTree = "<group>"; };
+		DD9B679D1C6FE29E00AD2D23 /* ModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +113,10 @@
 			children = (
 				DD9B675B1C6FA72700AD2D23 /* AppDelegate.swift */,
 				DD9B675F1C6FA72700AD2D23 /* Main.storyboard */,
+				DD9B679D1C6FE29E00AD2D23 /* ModeViewController.swift */,
+				DD9B679B1C6FE27200AD2D23 /* ScheduleTableViewController.swift */,
+				DD9B67991C6FE22200AD2D23 /* HelpTableViewController.swift */,
+				DD9B67971C6FE14D00AD2D23 /* SettingsTableViewController.swift */,
 				DD9B67951C6FDFD400AD2D23 /* HomeViewController.swift */,
 				DD9B67921C6FDEDD00AD2D23 /* Launch Screen.storyboard */,
 				DD9B67651C6FA72700AD2D23 /* Assets.xcassets */,
@@ -268,10 +280,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD9B679C1C6FE27200AD2D23 /* ScheduleTableViewController.swift in Sources */,
 				DD9B67641C6FA72700AD2D23 /* Potato.xcdatamodeld in Sources */,
+				DD9B679A1C6FE22200AD2D23 /* HelpTableViewController.swift in Sources */,
 				DD9B678D1C6FC32C00AD2D23 /* Potato.swift in Sources */,
+				DD9B67981C6FE14D00AD2D23 /* SettingsTableViewController.swift in Sources */,
 				DD9B67911C6FC3AE00AD2D23 /* Event.swift in Sources */,
 				DD9B675C1C6FA72700AD2D23 /* AppDelegate.swift in Sources */,
+				DD9B679E1C6FE29E00AD2D23 /* ModeViewController.swift in Sources */,
 				DD9B67961C6FDFD400AD2D23 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

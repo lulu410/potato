@@ -80,10 +80,10 @@
             </objects>
             <point key="canvasLocation" x="1822" y="405"/>
         </scene>
-        <!--Settings-->
+        <!--Settings Table View Controller-->
         <scene sceneID="fez-Qq-lKm">
             <objects>
-                <tableViewController title="Settings" id="ZhA-SF-TEF" sceneMemberID="viewController">
+                <tableViewController id="ZhA-SF-TEF" customClass="SettingsTableViewController" customModule="Potato" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="cfx-87-Xch">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -108,10 +108,10 @@
             </objects>
             <point key="canvasLocation" x="2076" y="-416"/>
         </scene>
-        <!--Schedule-->
+        <!--Schedule Table View Controller-->
         <scene sceneID="yVX-rI-h4J">
             <objects>
-                <tableViewController title="Schedule" id="oqr-wG-3vj" sceneMemberID="viewController">
+                <tableViewController id="oqr-wG-3vj" customClass="ScheduleTableViewController" customModule="Potato" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="APx-mz-SRH">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -139,7 +139,7 @@
         <!--Mode-->
         <scene sceneID="ebH-C0-63u">
             <objects>
-                <viewController title="Mode" id="Pad-Bq-pA4" sceneMemberID="viewController">
+                <viewController title="Mode" id="Pad-Bq-pA4" customClass="ModeViewController" customModule="Potato" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZNs-r6-xBO"/>
                         <viewControllerLayoutGuide type="bottom" id="tQC-HT-KZC"/>
@@ -154,10 +154,10 @@
             </objects>
             <point key="canvasLocation" x="2014" y="1137"/>
         </scene>
-        <!--Help-->
+        <!--Help Table View Controller-->
         <scene sceneID="8R8-8E-Drx">
             <objects>
-                <tableViewController title="Help" id="lPg-1s-5rb" sceneMemberID="viewController">
+                <tableViewController id="lPg-1s-5rb" customClass="HelpTableViewController" customModule="Potato" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="moq-b6-ZgG">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
