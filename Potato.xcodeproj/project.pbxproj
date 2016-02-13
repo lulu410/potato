@@ -15,6 +15,9 @@
 		DD9B67691C6FA72700AD2D23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9B67671C6FA72700AD2D23 /* LaunchScreen.storyboard */; };
 		DD9B67741C6FA72700AD2D23 /* PotatoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B67731C6FA72700AD2D23 /* PotatoTests.swift */; };
 		DD9B677F1C6FA72700AD2D23 /* PotatoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B677E1C6FA72700AD2D23 /* PotatoUITests.swift */; };
+		DD9B678D1C6FC32C00AD2D23 /* Potato.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B678C1C6FC32C00AD2D23 /* Potato.swift */; };
+		DD9B678F1C6FC35200AD2D23 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B678E1C6FC35200AD2D23 /* Schedule.swift */; };
+		DD9B67911C6FC3AE00AD2D23 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B67901C6FC3AE00AD2D23 /* Event.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		DD9B677A1C6FA72700AD2D23 /* PotatoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PotatoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD9B677E1C6FA72700AD2D23 /* PotatoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotatoUITests.swift; sourceTree = "<group>"; };
 		DD9B67801C6FA72700AD2D23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD9B678C1C6FC32C00AD2D23 /* Potato.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Potato.swift; sourceTree = "<group>"; };
+		DD9B678E1C6FC35200AD2D23 /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		DD9B67901C6FC3AE00AD2D23 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,9 @@
 				DD9B675F1C6FA72700AD2D23 /* Main.storyboard */,
 				DD9B67651C6FA72700AD2D23 /* Assets.xcassets */,
 				DD9B67671C6FA72700AD2D23 /* LaunchScreen.storyboard */,
+				DD9B678C1C6FC32C00AD2D23 /* Potato.swift */,
+				DD9B678E1C6FC35200AD2D23 /* Schedule.swift */,
+				DD9B67901C6FC3AE00AD2D23 /* Event.swift */,
 				DD9B676A1C6FA72700AD2D23 /* Info.plist */,
 				DD9B67621C6FA72700AD2D23 /* Potato.xcdatamodeld */,
 			);
@@ -264,6 +273,9 @@
 			files = (
 				DD9B67641C6FA72700AD2D23 /* Potato.xcdatamodeld in Sources */,
 				DD9B675E1C6FA72700AD2D23 /* ViewController.swift in Sources */,
+				DD9B678D1C6FC32C00AD2D23 /* Potato.swift in Sources */,
+				DD9B678F1C6FC35200AD2D23 /* Schedule.swift in Sources */,
+				DD9B67911C6FC3AE00AD2D23 /* Event.swift in Sources */,
 				DD9B675C1C6FA72700AD2D23 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
