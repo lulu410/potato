@@ -11,9 +11,9 @@
 import UIKit
 
 class Event: NSObject {
-    var time: Int = 0
+    var time: NSDate = NSDate()
     var act: Action
-    init (time: Int, act: Action) {
+    init (time: NSDate, act: Action) {
         self.time = time
         self.act = act
     }
