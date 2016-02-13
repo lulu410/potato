@@ -75,5 +75,10 @@ class Potato: NSObject {
     func changeName(name:Name) {
         self.name = name
     }
+    
+    //Changes the Growth of the Potato
+    func changeGrowth(growth: Growth) {
+        self.growth = growth
+    }
 }
 
