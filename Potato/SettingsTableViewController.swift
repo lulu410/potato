@@ -9,7 +9,9 @@
 import UIKit
 
 class SettingsTableViewController: UITableViewController {
-
+    
+    var settingsData = ["Alarms", "Notifications", "Sound Effects", "Music"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,23 +31,22 @@ class SettingsTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return settingsData.count
     }
-
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
-
+        let cell = tableView.dequeueReusableCellWithIdentifier("settingsCell", forIndexPath: indexPath) as! SettingsTableViewCell
+        
         // Configure the cell...
+        cell.label.text = settingsData[indexPath.row]
 
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.

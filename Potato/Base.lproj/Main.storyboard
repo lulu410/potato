@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <scenes>
@@ -84,18 +85,49 @@
         <scene sceneID="fez-Qq-lKm">
             <objects>
                 <tableViewController id="ZhA-SF-TEF" customClass="SettingsTableViewController" customModule="Potato" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="cfx-87-Xch">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="74" sectionHeaderHeight="28" sectionFooterHeight="28" id="cfx-87-Xch">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="i0g-fs-kv0">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="settingsCell" rowHeight="74" id="i0g-fs-kv0" customClass="SettingsTableViewCell" customModule="Potato" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="74"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="i0g-fs-kv0" id="RK8-TS-9f2">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="73.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wL5-Cf-edT">
+                                            <rect key="frame" x="73" y="26" width="42" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zdp-AF-iX3">
+                                            <rect key="frame" x="8" y="8" width="57.5" height="57.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="Zdp-AF-iX3" secondAttribute="height" multiplier="1:1" id="BtZ-9J-Ak5"/>
+                                            </constraints>
+                                        </imageView>
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9rG-eR-2mN">
+                                            <rect key="frame" x="543" y="21" width="51" height="31"/>
+                                        </switch>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Zdp-AF-iX3" firstAttribute="top" secondItem="RK8-TS-9f2" secondAttribute="topMargin" id="8lp-JG-SpY"/>
+                                        <constraint firstItem="9rG-eR-2mN" firstAttribute="centerY" secondItem="RK8-TS-9f2" secondAttribute="centerY" id="FAU-aO-H45"/>
+                                        <constraint firstItem="wL5-Cf-edT" firstAttribute="centerY" secondItem="RK8-TS-9f2" secondAttribute="centerY" id="IQd-Me-93W"/>
+                                        <constraint firstItem="Zdp-AF-iX3" firstAttribute="leading" secondItem="RK8-TS-9f2" secondAttribute="leadingMargin" id="Js2-xr-6Rg"/>
+                                        <constraint firstItem="Zdp-AF-iX3" firstAttribute="centerY" secondItem="RK8-TS-9f2" secondAttribute="centerY" id="MSz-K2-U8y"/>
+                                        <constraint firstItem="Zdp-AF-iX3" firstAttribute="bottom" secondItem="RK8-TS-9f2" secondAttribute="bottomMargin" id="WQS-jh-dpr"/>
+                                        <constraint firstItem="9rG-eR-2mN" firstAttribute="trailing" secondItem="RK8-TS-9f2" secondAttribute="trailingMargin" id="gXP-mn-Uvz"/>
+                                        <constraint firstItem="wL5-Cf-edT" firstAttribute="leading" secondItem="Zdp-AF-iX3" secondAttribute="trailing" constant="8" id="wT8-MP-C5z"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="icon" destination="Zdp-AF-iX3" id="KjC-Qy-Q3h"/>
+                                    <outlet property="label" destination="wL5-Cf-edT" id="qsO-lZ-WhC"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
