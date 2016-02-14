@@ -91,8 +91,8 @@ class Potato: NSObject {
     }
     
     //Changes the Growth of the Potato
-    func changeGrowth(growth: Growth) {
-        self.growth = growth
-    }
+  //  func changeGrowth(growth: Growth) {
+    //    self.growth = growth
+   // }
 }
 
