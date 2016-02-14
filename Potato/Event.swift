@@ -17,6 +17,7 @@ class Event: NSObject {
     init (start: NSDate, end: NSDate, act: Action) {
         self.start = start
         self.end = end
+        self.act = act
     }
     enum Action: String {
         case Eat = "Eat"
