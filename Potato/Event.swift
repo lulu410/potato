@@ -31,7 +31,6 @@ class Event: NSObject {
         case Chill = "Chill"
         case Date = "Date"
         case NetflixChill = "NetflixChill"
-        
         init(act: Action) {
             self = act
         }
